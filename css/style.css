@@ -772,5 +772,9 @@ form{
 
 div.alertBox-alert{
     position: relative;
+    color: rgb(255, 0, 0);
+    font-family: med;
+    font-size: 4vh;
+    position: relative;
     z-index: 10;
 }

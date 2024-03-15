@@ -50,12 +50,12 @@
                     </div>
                         
                     <?php
-                    if($showAlert){
+                    if($showAlert = null){
                     echo '<div class="alertBox-alert" role="alert" >Username Already Exists</div>';
 
                     }
 
-                    if($showError){
+                    if($showError = null){
                     echo '<div class="alertBox-alert red su" role="alert">fill up the empty areas</div>';
                     }
                     
@@ -71,8 +71,8 @@
 
 <?php 
 
-$showError = false;
-$showAlert = false;
+$showError != null;
+$showAlert != null;
 
     if(isset($_POST['signup'])){
 
@@ -88,7 +88,7 @@ $showAlert = false;
 
         if($numExistsRows > 0)
         {
-            $showAlert = true; //"Username Already Exists";
+            $showAlert = null; //"Username Already Exists";
             //echo "<script>alert('Username Already Exists, please log in instead');</script>";
         }
         else
@@ -106,7 +106,7 @@ $showAlert = false;
             }
             else
             {
-                $showError = true;
+                $showError = null;
                 //echo "<script>alert('fill up the empty areas');</script>";           
             }
 
